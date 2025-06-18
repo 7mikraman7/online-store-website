@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <!-- Мета-дані сторінки -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтернет-Market</title>
+    <!-- Підключення CSS -->
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+
+    <header class="top-bar">
+        <!-- Логотип -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="../image/logo.png" alt="Logo"> <!-- Зображення логотипу -->
+            </a>
+        </div>
+        <!-- Пошуковий блок -->
+        <div class="search-bar">
+            <input type="text" placeholder="Пошук"> <!-- Поле для пошуку -->
+            <button сlass="btn1">Знайти</button> <!-- Кнопка пошуку -->
+            <!-- Вибір міста -->
+            <label for="city-select" class="city-label">Місто:</label>
+            <select id="city-select" class="city-select">
+                <option value="Київ" selected>Київ</option>
+                <option value="Харків">Харків</option>
+                <option value="Львів">Львів</option>
+                <option value="Дніпро">Дніпро</option>
+            </select>
+        </div>
+        <!-- Права частина верхнього блоку -->
+        <nav class="top-bar-right">
+            <a href="404.html">Акції</a> <!-- Посилання на акції -->
+            <a href="404.html">Магазини</a> <!-- Посилання на магазини -->
+            <a href="404.html">Trade-In</a> <!-- Посилання на Trade-In -->
+            <a href="404.html">Допомога</a> <!-- Посилання на допомогу -->
+            <a href="404.html">Увійти</a> <!-- Посилання для входу -->
+            <a href="404.html">Порівняння</a> <!-- Посилання на порівняння -->
+            <a href="404.html">Обране</a> <!-- Посилання на обране -->
+            <button class="cart-button" onclick="location.href='basket.html';">Кошик</button> <!-- Кнопка для кошика -->
+        </nav>
+    </header>
+
+
+<main class="main-content">
+        <!-- Блок товару -->
+        <div class="smartphones-product">
+            <img class = "two" src="../image/iPhone 16 pro Desert Titanium.png" alt="💻">
+            <h3 >Смартфон Apple iPhone 16 Pro Max 256Gb Desert Titanium</h3> <!-- Назва товару -->
+            <div class="memory-options">
+                <label>
+                    <input type="radio" name="memory1" value="51.499 ₴" onclick="updatePrice(this)"> 128GB
+                </label>
+                <label>
+                    <input type="radio" name="memory1" value="56.699 ₴" onclick="updatePrice(this)"> 256GB
+                </label>
+                <label>
+                    <input type="radio" name="memory1" value="66.899 ₴" onclick="updatePrice(this)"> 512GB
+                </label>
+                <label>
+                    <input type="radio" name="memory1" value="77.199 ₴" onclick="updatePrice(this)"> 1TB
+                </label>
+            </div>
+            <del >56.499 ₴</del>
+            <p class="price"> 51.499 ₴</p> <!-- Ціна товару -->
+            <button class="btn3 add-to-cart-btn" 
+            data-id="1" 
+            data-name="iPhone 16 Pro Max Desert Titanium" 
+            data-price="51499" 
+            data-image="../image/iPhone 16 pro Desert Titanium.png">
+        Додати до кошика
+    </button>
+        </div>
+
+        <div class="smartphones-product">
+            <img class = "two" src="../image/iPhone 16 pro Natural Titanium.png" alt="💻">
+            <h3 >Смартфон Apple iPhone 16 Pro 128Gb Natural Titanium</h3> <!-- Назва товару -->
+            <div class="memory-options">
+                <label>
+                    <input type="radio" name="memory1" value="51.499 ₴" onclick="updatePrice(this)"> 128GB
+                </label>
+                <label>
+                    <input type="radio" name="memory1" value="56.699 ₴" onclick="updatePrice(this)"> 256GB
+                </label>
+                <label>
+                    <input type="radio" name="memory1" value="66.899 ₴" onclick="updatePrice(this)"> 512GB
+                </label>
+                <label>
+                    <input type="radio" name="memory1" value="77.199 ₴" onclick="updatePrice(this)"> 1TB
+                </label>
+            </div>
+            <del>56.499 ₴</del>
+            <p class="price">51.499 ₴</p> <!-- Ціна товару -->
+            <button class="btn3 add-to-cart-btn" 
+                data-id="2" 
+                data-name="iPhone 16 Pro 128Gb Natural Titanium" 
+                data-price="51499" 
+                data-image="../image/iPhone 16 pro Natural Titanium.png">
+            Додати до кошика
+        </button>
+        </div>
+
+        <div class="smartphones-product">
+            <img class = "two" src="../image/iPhone 16 pro White Titanium.png" alt="💻">
+            <h3 >Смартфон Apple iPhone 16 Pro 128Gb White Titanium</h3> <!-- Назва товару -->
+            <div class="memory-options">
+                <label>
+                    <input type="radio" name="memory1" value="51.499 ₴" onclick="updatePrice(this)"> 128GB
+                </label>
+                <label>
+                    <input type="radio" name="memory1" value="56.699 ₴" onclick="updatePrice(this)"> 256GB
+                </label>
+                <label>
+                    <input type="radio" name="memory1" value="66.899 ₴" onclick="updatePrice(this)"> 512GB
+                </label>
+                <label>
+                    <input type="radio" name="memory1" value="77.199 ₴" onclick="updatePrice(this)"> 1TB
+                </label>
+            </div>
+            <del>56.499 ₴</del>
+            <p class="price">51.499 ₴</p> <!-- Ціна товару -->
+            <button class="btn3 add-to-cart-btn" 
+                data-id="3" 
+                data-name="iPhone 16 Pro 128Gb White Titanium" 
+                data-price="51499" 
+                data-image="../image/iPhone 16 pro White Titanium.png">
+            Додати до кошика
+        </button>
+        </div>
+
+        <div class="smartphones-product">
+            <img class = "two" src="../image/iPhone 16 pro Black Titanium.png" alt="💻">
+            <h3 >Смартфон Apple iPhone 16 Pro 128Gb Black Titanium</h3> <!-- Назва товару -->
+            <div class="memory-options">
+                <label>
+                    <input type="radio" name="memory1" value="51.499 ₴" onclick="updatePrice(this)"> 128GB
+                </label>
+                <label>
+                    <input type="radio" name="memory1" value="56.699 ₴" onclick="updatePrice(this)"> 256GB
+                </label>
+                <label>
+                    <input type="radio" name="memory1" value="66.899 ₴" onclick="updatePrice(this)"> 512GB
+                </label>
+                <label>
+                    <input type="radio" name="memory1" value="77.199 ₴" onclick="updatePrice(this)"> 1TB
+                </label>
+            </div>
+            <del>56.499 ₴</del>
+            <p class="price">51.499 ₴</p> <!-- Ціна товару -->
+            <button class="btn3 add-to-cart-btn" 
+                data-id="4" 
+                data-name="iPhone 16 Pro 128Gb Black Titanium" 
+                data-price="51499" 
+                data-image="../image/iPhone 16 pro Black Titanium.png">
+            Додати до кошика
+        </button>
+        </div>
+
+    </section>
+</main>
+
+
+     <!-- Підключення JavaScript -->
+     <script src="../JS/script.js"></script>    
+</body>
+</html>

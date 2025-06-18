@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <!-- Мета-дані сторінки -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтернет-Магазин</title>
+    <!-- Підключення CSS -->
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+    <!-- Верхній блок сторінки -->
+    <header class="top-bar">
+        <!-- Логотип -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="../image/logo.png" alt="Logo"> <!-- Зображення логотипу -->
+            </a>
+        </div>
+        <!-- Пошуковий блок -->
+        <div class="search-bar">
+            <input type="text" placeholder="Пошук"> <!-- Поле для пошуку -->
+            <button сlass="btn1">Знайти</button> <!-- Кнопка пошуку -->
+            <!-- Вибір міста -->
+            <label for="city-select" class="city-label">Місто:</label>
+            <select id="city-select" class="city-select">
+                <option value="Київ" selected>Київ</option>
+                <option value="Харків">Харків</option>
+                <option value="Львів">Львів</option>
+                <option value="Дніпро">Дніпро</option>
+            </select>
+        </div>
+        <!-- Права частина верхнього блоку -->
+        <nav class="top-bar-right">
+            <a href="404.html">Акції</a> <!-- Посилання на акції -->
+            <a href="404.html">Магазини</a> <!-- Посилання на магазини -->
+            <a href="404.html">Trade-In</a> <!-- Посилання на Trade-In -->
+            <a href="404.html">Допомога</a> <!-- Посилання на допомогу -->
+            <a href="404.html">Увійти</a> <!-- Посилання для входу -->
+            <a href="404.html">Порівняння</a> <!-- Посилання на порівняння -->
+            <a href="404.html">Обране</a> <!-- Посилання на обране -->
+            <button class="cart-button" onclick="location.href='basket.html';">Кошик</button> <!-- Кнопка для кошика -->
+        </nav>
+    </header>
+
+     <div class ="photo404">
+        <img src="../image/404.png" alt="😭">
+     </div>
+
+    <!-- Виїжджаючий блок справа -->
+    <div id="side-notice" class="side-notice">
+        <strong>
+            <h1 >Помилка 404</h1>
+            <h2> Ого,якось незручно, друже</h2>
+        </strong>
+    </div>
+
+<script src="../JS/script.js"></script>
+
+</body>
+</html>
